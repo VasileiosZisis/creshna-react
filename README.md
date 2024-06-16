@@ -1,8 +1,12 @@
-# React + Vite
+# CRESHNA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visit the website [here](https://www.creshna.com/)
 
-Currently, two official plugins are available:
+### Website for a music band
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple one-page website, made with React and Vite.
+It includes react-simple-image-viewer plugin for the image viewer.
+
+![First Section](src/assets/creshna-react.png)
+![Albums Section](src/assets/creshna-albums.png)
+![Merch Section](src/assets/creshna-merch.png)
