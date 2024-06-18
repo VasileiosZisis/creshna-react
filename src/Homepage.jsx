@@ -1,5 +1,6 @@
 import './Homepage.css'
 import ImageModal from './components/ImageModal'
+import Starfield from 'react-starfield'
 
 function Homepage () {
   const imageData = [
@@ -31,197 +32,204 @@ function Homepage () {
   ]
 
   return (
-    <main>
-      <section className='logo-section'>
-        <div className='logo'>
-          <img
-            src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762244/creshna/logo_havzrc.png'
-            alt='logo of the band'
-          />
-        </div>
-        <div className='title'>
-          <h1>There can be no life in the void</h1>
-        </div>
-      </section>
-      <section className='band-section'>
-        <div className='title-container'>
-          <h2>band</h2>
-        </div>
-        <div className='band-image-container'>
-          <div className='band-image-left'>
+    <>
+      <main>
+        <section className='logo-section'>
+          <div className='logo'>
             <img
-              src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762274/creshna/band-image-1_vtrlr7.webp'
-              alt='Black and white photo of the band members'
+              src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762244/creshna/logo_havzrc.png'
+              alt='logo of the band'
             />
           </div>
-          <div className='band-image-right'>
-            <img
-              src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762275/creshna/band-image-2_iv2ua5.webp'
-              alt='Photo of the band members in front of a graffiti wall'
-            />
+          <div className='title'>
+            <h1>There can be no life in the void</h1>
           </div>
-        </div>
-        <div className='imagemodal-container'>
-          <ImageModal imageData={imageData} />
-        </div>
-      </section>
-      <section className='albums-section'>
-        <div>
-          <h2>albums</h2>
-        </div>
-        <div className='band-image-container'>
-          <div className='band-image-left'>
-            <a
-              href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
-              target='_blank'
-            >
+        </section>
+        <section className='band-section'>
+          <div className='title-container'>
+            <h2>band</h2>
+          </div>
+          <div className='band-image-container'>
+            <div className='band-image-left'>
               <img
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762330/creshna/Album1_hmyja9.webp'
-                alt='Cover image of the album'
+                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762274/creshna/band-image-1_vtrlr7.webp'
+                alt='Black and white photo of the band members'
               />
-            </a>
-          </div>
-          <div className='band-image-right'>
-            <a
-              href='https://creshna.bandcamp.com/album/the-fallout'
-              target='_blank'
-            >
+            </div>
+            <div className='band-image-right'>
               <img
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762336/creshna/Album2_pmhlay.webp'
-                alt='Cover image of the album'
+                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762275/creshna/band-image-2_iv2ua5.webp'
+                alt='Photo of the band members in front of a graffiti wall'
               />
-            </a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className='merch-section'>
-        <div>
-          <h2>merch</h2>
-        </div>
-        <div className='merch-container'>
+          <div className='imagemodal-container'>
+            <ImageModal imageData={imageData} />
+          </div>
+        </section>
+        <section className='albums-section'>
           <div>
-            <a
-              href='https://creshna.bandcamp.com/merch/lake-creshna'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762511/creshna/T-Shirt-1_o7up2y.webp'
-                alt='Black T-Shirt zoomed'
-              />
-            </a>
+            <h2>albums</h2>
           </div>
+          <div className='band-image-container'>
+            <div className='band-image-left'>
+              <a
+                href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
+                target='_blank'
+              >
+                <img
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762330/creshna/Album1_hmyja9.webp'
+                  alt='Cover image of the album'
+                />
+              </a>
+            </div>
+            <div className='band-image-right'>
+              <a
+                href='https://creshna.bandcamp.com/album/the-fallout'
+                target='_blank'
+              >
+                <img
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762336/creshna/Album2_pmhlay.webp'
+                  alt='Cover image of the album'
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className='merch-section'>
           <div>
-            <a
-              href='https://creshna.bandcamp.com/merch/lake-creshna'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762513/creshna/T-Shirt-2_wjf1oi.webp'
-                alt='Black and white T-shirt side by side comparison'
-              />
-            </a>
+            <h2>merch</h2>
           </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/merch/lake-creshna'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762512/creshna/T-Shirt-3_z9vlmp.webp'
-                alt='Black T-Shirt'
-              />
-            </a>
+          <div className='merch-container'>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/merch/lake-creshna'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762511/creshna/T-Shirt-1_o7up2y.webp'
+                  alt='Black T-Shirt zoomed'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/merch/lake-creshna'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762513/creshna/T-Shirt-2_wjf1oi.webp'
+                  alt='Black and white T-shirt side by side comparison'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/merch/lake-creshna'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762512/creshna/T-Shirt-3_z9vlmp.webp'
+                  alt='Black T-Shirt'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/merch/lake-creshna'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762511/creshna/T-Shirt-4_kfchkm.webp'
+                  alt='White T-Shirt'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/the-fallout'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763160/creshna/CD-1_witssg.webp'
+                  alt='CD case closed'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/the-fallout'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763159/creshna/CD-2_o2tzhq.webp'
+                  alt='CD case opened'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/the-fallout'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763159/creshna/CD-3_hs5mqm.webp'
+                  alt='CD case opened inside'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_BACK_SIDE_mlqrel.webp'
+                  alt='Vinyl back side'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_FRONT_pk1jov.webp'
+                  alt='Vinyl front side'
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
+                target='_blank'
+              >
+                <img
+                  className='hover'
+                  src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_PACKAGE_ptlwem.webp'
+                  alt='Vinyl package'
+                />
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/merch/lake-creshna'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632762511/creshna/T-Shirt-4_kfchkm.webp'
-                alt='White T-Shirt'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/the-fallout'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763160/creshna/CD-1_witssg.webp'
-                alt='CD case closed'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/the-fallout'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763159/creshna/CD-2_o2tzhq.webp'
-                alt='CD case opened'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/the-fallout'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763159/creshna/CD-3_hs5mqm.webp'
-                alt='CD case opened inside'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_BACK_SIDE_mlqrel.webp'
-                alt='Vinyl back side'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_FRONT_pk1jov.webp'
-                alt='Vinyl front side'
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href='https://creshna.bandcamp.com/album/there-can-be-no-life-in-the-void'
-              target='_blank'
-            >
-              <img
-                className='hover'
-                src='https://res.cloudinary.com/dmdbza74n/image/upload/v1632763208/creshna/CRESHNA_VINYL_PACKAGE_ptlwem.webp'
-                alt='Vinyl package'
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+      <Starfield
+        starCount={500}
+        starColor={[255, 255, 255]}
+        speedFactor={0.02}
+      />
+    </>
   )
 }
 
